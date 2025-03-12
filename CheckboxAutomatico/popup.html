@@ -6,23 +6,22 @@
   <title>Subir Excel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<header class="header">
-  <img src="images/logooomapasgris.png" alt="Logo" class="logo">
-</header>
-
-<main class="container">
 <body>
-  <h1>Cargar archivo Excel</h1>
-  <input type="file" id="fileInput" accept=".xlsx, .xls, .csv" />
-  <select name="" id="">
-    <option value="">Selecione una cuadrilla</option>
-  </select>
-  <button id="resaltarBtn">Marcar Cuentas</button>
+  <header class="header">
+    <img src="images/logooomapasgris.png" alt="Logo" class="logo">
+  </header>
 
-  <script src="xlsx.full.min.js"></script>
-  <script src="content.js"></script>
-  <script src="popup.js"></script>
-</main>
+  <main class="container">
+    <h1>Cargar archivo Excel</h1>
+    <input type="file" id="fileInput" accept=".xlsx, .xls, .csv" />
+    <!-- Select para elegir la hoja del Excel -->
+    <select id="sheetSelect">
+      <option value="">Seleccione una hoja</option>
+    </select>
+    <button id="resaltarBtn">Marcar Cuentas</button>
 
+    <script src="xlsx.full.min.js"></script>
+    <script src="popup.js"></script>
+  </main>
 </body>
 </html>
